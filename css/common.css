@@ -1,0 +1,18 @@
+body, div, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	background: #fff;
+	color: #222;
+}
+ol, ul, li, h1, h2, h3, h4, h5, h6 {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}

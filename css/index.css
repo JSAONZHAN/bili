@@ -4,7 +4,7 @@
     width: 1160px;
     height: 42px;
     background-color: rgba(255,250,250,0.1);
-    z-index: 100;
+    z-index: 7;
 }
 .head-left {
     float: left;
@@ -27,9 +27,7 @@
     width: 20px;
     height: 20px;
     float: left;
-    background: url(../img/icon/icons.png);
-    background-position: -917px -87px;
-    background-repeat: no-repeat;
+    background: url(../img/icon/icons.png) -917px -87px no-repeat;
 }
 .zhuzhan:hover {
     background-color: red;
@@ -45,11 +43,17 @@
 }
 .zhoubian {
     width: 56px;
-
 }
 .bainianji {
-    width: 60px;
-
+    width: 68px;
+}
+.new {
+    margin: 13px 6px 0 0;
+    display: block;
+    width: 21px;
+    height: 20px;
+    float: right;
+    background: url(../img/icon/icons.png) -851px -412px no-repeat;
 }
 .head-com {
     height: 42px;
@@ -147,16 +151,61 @@
     background-image: url("../img/head/bili-nian.png");
 }
 /*以上内容为顶部图片的CSS*/
-.menu {position: relative;
-
+.menu {
+    position: relative;
     margin: -94px auto 0 auto;
-    height: 80px;
+    height: 60px;
     width: 1160px;
-    background-color: red;
-    z-index: 500;
+    font-size: 14px;
 }
-
-
+.menu-home {
+    position: relative;
+    top: 10px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.menu-home i {
+    position: relative;
+    display: block;
+    margin: 0 0 0 3px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/icons.png) -661px -1171px no-repeat;
+}
+.menu-home span {
+    display: block;
+    width: 50px;
+    height: 20px;
+}
+.menu-animation {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.animation-num {
+    position: relative;
+    top: 17px;
+    margin: 0 auto;
+    width: 24px;
+    height: 14px;
+    background-color: #ffafc9;
+    border-radius: 4px;
+    color: #fff;
+    font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+.animation {
+    position: relative;
+    top: 15px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
 
 
 

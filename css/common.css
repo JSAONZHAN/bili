@@ -16,3 +16,11 @@ ol, ul, li, h1, h2, h3, h4, h5, h6 {
 a {
 	text-decoration: none;
 }
+i, span {
+	font-style: normal;
+	font-weight: normal;
+}
+input, button, select{
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	outline: 0;
+}

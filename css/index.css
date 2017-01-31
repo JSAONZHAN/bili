@@ -340,7 +340,7 @@
     /*margin: 0 auto;
     width: 1160px;
     height: 7374px;*/
-    /*background-color: #CFCFCF;*/
+    background-color: #CFCFCF;
 }
 .container-top {
     margin: 0 auto 20px auto;
@@ -565,6 +565,9 @@
     line-height: 16px;
     color: #6d757a;
 }
+.pmt-link a:hover {
+    color: #00a1d6;
+}
 .tg-list {
     padding-top: 10px;
     height: 150px;
@@ -659,12 +662,16 @@
     background: #e5e9ef;
     white-space: nowrap;
 }
+.index-online a:hover {
+    color: #00a1d6;
+}
 .web-online {
     display: inline-block;
     line-height: 34px;
     text-align: left;
     color: #6d757a;
 }
+
 .s-line {
     display: inline-block;
     border-left: 1px solid #b8c0cc;
@@ -715,7 +722,308 @@
     width: 32px;
     height: 20px;
 }
+/*下面是番剧*/
+.fanju-l {
+    width: 880px;
+    float: left;
+}
+.fanju-r {
+    height: 360px;   
+    width: 260px;
+    margin-bottom: 50px;
+    float: right;
+}
+.fanju-l-head {
+    position: relative;
+    height: 24px;
+    white-space: nowrap;
+}
+.fanju-l-body {
+    position: relative;
+    margin-right: -20px;
+    clear: both;
+}
+.fanju-l-head .fj-l-i {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    background: url(../img/icon/icons.png) -141px -140px no-repeat;
+    width: 40px;
+    height: 39px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.fanju-l-head .fj-fj {
+     margin-left: 46px;
+    float: left;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #222;
+}
+.fanju-l-head h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.fj-list {
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fj-list li {
+    position: relative;
+    margin: 0 20px 0 0;
+    padding: 1px 0 2px;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.fj-list li span {
+    font-size: 12px;
+}
+.fj-more {
+    float: right;
+    text-align: center;
+    margin-left: 10px;
+}
+.fj-more .fj-more-a {
+    display: block;
+    width: 52px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ccd0d7;
+    color: #555;
+    border-radius: 4px;
+    text-align: center;
+}
+.fj-more-a i {
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    margin: -17px 0 0 10px; 
+    background: url(../img/icon/icons.png) -478px -218px no-repeat;
+    vertical-align: middle;
 
+}
+.fj-gengduo {
+    position: relative;
+    margin-left: 8px;
+    width: 24px;
+    height: 22px;
+}
+.fj-trend {
+    float: right;
+    cursor: pointer;
+    border: 1px solid #ccd0d7;
+    border-radius: 4px;
+    height: 22px;
+    padding: 0 10px;
+}
+.refresh {
+    background: url(../img/icon/icons.png) -475px -89px no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    vertical-align: top;
+    /*transition: .2s;*/
+    margin-top: 5px;
+}
+.info {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 22px;
+    margin-left: 5px;
+}
+.fj-trend:hover {
+    background-color: #ccd0d7;
+}
+.fj-more-a:hover {
+    background-color: #ccd0d7;
+}
+.fj-xinfan {
+    margin: 3px 0 0 40px;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.fj-xinfan i {
+    display: inline-block;
+    vertical-align: top;
+    background: url(../img/icon/icons.png) -665px -1113px no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+}
+.xinfan {
+    vertical-align: top;
+    height: auto;
+    padding: 0 0 0 8px;
+    margin: -15px 0 0 15px;
+    line-height: 16px;
+    color: #6d757a;
+    cursor: pointer;
+}
+.xinfan:hover {
+    color: #00a1d6;
+}
+.fj-list-body {
+    height: 316px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.fj-list-body li {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.fj-com {
+    position: relative;
+    width: 160px;
+    height: 148px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.fj-a {
+    width: 160px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s all linear;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 4px;
+}
+.medal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background: url(../img/icon/icons.png) -849px -148px no-repeat;
+    z-index: 5;
+    pointer-events: none;
+}
+.fj-a img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.fj-words {
+    margin-bottom: 8px;
+    padding-top: 8px;
+    height: 20px;
+    line-height: 20px;
+    transition: all .2s linear;
+    color: #222;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-align: left;
+}
+.fj-i {
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+}
+.fj-i span {
+    display: inline-block;
+    vertical-align: top;
+    color: #99a2aa;
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 12px;
+    height: 14px;
+    float: left;
+}
+.fj-play {
+    vertical-align: top;
+    margin-right: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/icon/icons.png) -282px -90px  no-repeat;
+}
+.fj-mulu {
+    vertical-align: top;
+    margin-right: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/icon/icons.png) -282px -218px  no-repeat;
+}
+.medal-silver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background: url(../img/icon/icons.png) -849px -212px no-repeat;
+    z-index: 5;
+    pointer-events: none;
+}
+.fj-r-head {
+    position: relative;
+}
+.fj-r-left {
+    float: left;
+}
+.fj-r-left span {
+    font-size: 18px;
+    height: 24px;
+    line-height: 24px;
+}
+.fj-r-left span h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+.fj-r-right {
+    float: right;
+}
+.fj-r-body {
+    clear: both;
+}
+.fj-rank {
+    padding-bottom: 15px;
+/*    min-height: 278px;*/
+}
+.fj-rank li:first-child {
+    margin: 0;
+}
+.fj-rank li {
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+    padding-left: 25px;
+}
+.fj-rank li .fj-number {
+    position: absolute;
+    color: #fff;
+    height: 18px;
+    line-height: 17px;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    min-width: 12px;
+    text-align: center;
+    background-color: #b8c0cc;
+    z-index: 20;
+    border-radius: 4px;
+    padding: 0 3px 0 3px;
+    font-weight: bolder;
+}
+.fj-rank li .fj-n1 {
+        background: #f25d8e;
+
+}
 
 
 

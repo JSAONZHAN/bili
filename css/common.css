@@ -20,7 +20,7 @@ a {
 }
 i, span {
 	font-style: normal;
-	font-weight: normal;
+	/*font-weight: normal;*/
 }
 input, button, select{
 	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
@@ -28,4 +28,10 @@ input, button, select{
 }
 img {
 	cursor: pointer;
+}
+li:after {
+	clear: both;
+}
+ul:after {
+	clear: both;
 }

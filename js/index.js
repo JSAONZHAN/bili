@@ -84,6 +84,31 @@ lunboLeft.onmouseover = stop;
 lunboLeft.onmouseout = play;
 play();
 
+// 下面是foot
+var phone = document.querySelector('.phone');
+var pic_hv = document.querySelector('.pic-hv');
+var weibo = document.querySelector('.weibo');
+var pic_hv2 = document.querySelector('.pic-hv2');
+var weixin = document.querySelector('.weixin');
+var pic_hv3 = document.querySelector('.pic-hv3');
+function picShow (){
+	pic_hv.style.display = "block";
+}
+function hiddenPic (){
+	pic_hv.style.display = "none";
+}
+function picShow2 (){
+	pic_hv2.style.display = "block";
+}
+function hiddenPic2 (){
+	pic_hv2.style.display = "none";
+}
+function picShow3 (){
+	pic_hv3.style.display = "block";
+}
+function hiddenPic3 (){
+	pic_hv3.style.display = "none";
+}
 
 
 

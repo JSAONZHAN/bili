@@ -19,19 +19,45 @@
 		<form action="" method="post">
 			<div class="user">
 				<label for="">
-					<input type="text" class="username" placeholder="昵称（例：哔哩哔哩）">
-					<p class="msg">5-25个字符，推荐一个汉字为两个字符，推荐使用中文名</p>
+					<input type="text" class="text" placeholder="昵称（例：哔哩哔哩）">
 				</label>
-				
+				<p class="msg">
+				5-25个字符，一个汉字为两个字符，推荐使用中文名。</p>
 			</div>
-			<div class="user-zifu">
-				<label>
-					<span>0个字符</span>
+			<div class="zifu">
+				<label for="">
+					<span class="count">0个字符</span>
+				</label>				
+			</div>
+			<div class="pwd">
+				<label for="">
+					<input class="text" type="password" placeholder="密码（6-16个字符组成，区分大小写）">					
+				</label>
+				<p class="msg"></p>
+			</div>
+			<div class="strong">
+				<label for="">
+					<span class="ruo com">弱</span>
+					<span class="zhong com">中</span>
+					<span class="qiang com">强</span>
 				</label>
 			</div>
-
-
-
+			<div class="pwd">
+				<label for="">
+					<input type="password" class="text" placeholder="确认密码" disabled="">
+				</label>
+				<p class="msg">请在输入一次</p>
+			</div>
+			<!-- 验证码 -->
+			<div class="yanzhengma">
+				<label for="">
+					<input type="text" class="text yzm" placeholder="请输入验证码">
+					<div class="yanzheng"></div>
+				</label>
+			</div>
+			<div class="btn">
+				<input type="submit" class="submit-btn" value="同意协议并注册">
+			</div>
 		</form>
 	</div>
 

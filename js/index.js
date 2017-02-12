@@ -83,6 +83,51 @@ for(var i =0; i <buttons.length; i++){
 lunboLeft.onmouseover = stop;
 lunboLeft.onmouseout = play;
 play();
+//下面是side-bar
+//回到顶部
+var btn_gotop = document.querySelector('.btn-gotop');
+var timer = null;
+var isTop = true;
+var dsq = true;
+//滚动条滚动时触发
+window.onscroll = function(){
+	if (!isTop) {
+		clearInterval(timer);
+	}
+	isTop = false;
+}
+btn_gotop.onclick = function (){
+	//设置定时器
+	timer = setInterval(function(){
+		//获取滚动条距离顶部的高度
+		var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+		var ispeed = Math.floor(-osTop/5);
+		document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+		isTop = true;
+		// console.log(osTop - ispeed);
+		if(osTop == 0){
+			clearInterval(timer);
+		}
+	},30)	
+}
+//连续点击回到顶部会出现问题
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 下面是foot
 var phone = document.querySelector('.phone');
@@ -91,26 +136,36 @@ var weibo = document.querySelector('.weibo');
 var pic_hv2 = document.querySelector('.pic-hv2');
 var weixin = document.querySelector('.weixin');
 var pic_hv3 = document.querySelector('.pic-hv3');
-function picShow (){
-	pic_hv.style.display = "block";
+// function picShow (){
+// 	pic_hv.style.display = "block";
+// }
+// function hiddenPic (){
+// 	pic_hv.style.display = "none";
+// }
+// function picShow2 (){
+// 	pic_hv2.style.display = "block";
+// }
+// function hiddenPic2 (){
+// 	pic_hv2.style.display = "none";
+// }
+phone.onmouseover = function(){
+	return pic_hv.style.display = "block";
 }
-function hiddenPic (){
-	pic_hv.style.display = "none";
+phone.onmouseout = function(){
+	return pic_hv.style.display = "none";
 }
-function picShow2 (){
-	pic_hv2.style.display = "block";
+weibo.onmouseover = function(){
+	return pic_hv2.style.display = "block";
 }
-function hiddenPic2 (){
-	pic_hv2.style.display = "none";
+weibo.onmouseout = function(){
+	return pic_hv2.style.display = "none";
 }
-function picShow3 (){
-	pic_hv3.style.display = "block";
+weixin.onmouseover = function(){
+	return pic_hv3.style.display = "block";
 }
-function hiddenPic3 (){
-	pic_hv3.style.display = "none";
+weixin.onmouseout = function(){
+	return pic_hv3.style.display = "none";
 }
-
-
 
 
 

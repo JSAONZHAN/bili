@@ -1393,13 +1393,20 @@
     background: url(../img/icon/icons.png) -141px -203px no-repeat;
 }
 
-#game-rdiff {
-    display: inline-block;
+.game-rdiff {
+    display: block;
     width: 260px;
     height: 18px;
     overflow: hidden;
 }
-
+/*下面是娱乐*/
+.entertainment-icon {
+    background: url(../img/icon/icons.png) -141px -1032px no-repeat
+}
+/*下面是生活*/
+#life-icon {
+    background: url(../img/icon/icons.png) -137px -970px no-repeat;
+}
 
 
 

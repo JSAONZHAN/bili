@@ -30,7 +30,7 @@
     background: url(../img/icon/icons.png) -917px -87px no-repeat;
 }
 .zhuzhan:hover {
-    background-color: red;
+    background-color: rgba(240,248,255,0.7);
 }
 .huayou {
     width: 60px;
@@ -64,7 +64,7 @@
     font-size: 13px;
 }
 .head-com:hover {
-    background-color: red;
+    background-color: rgba(240,248,255,0.7);
 }
 .head-right {
     float: right;
@@ -77,8 +77,16 @@
     float: left;
     text-align: center;
     line-height: 42px;
-    border-right: 1px solid #222;
+    /*border-right: 1px solid #222;*/
     cursor: pointer;
+}
+.shuxian {
+    position: relative;
+    top: 12px;
+    width: 1px;
+    height: 15px;
+    background-color: #222;
+    float: left;
 }
 .register {
     width: 50px;
@@ -98,6 +106,9 @@
     line-height: 42px;
     background: url(../img/head/b-post.png) no-repeat;
     cursor: pointer;
+}
+.tougao:hover {
+    background: url(../img/head/b-post-hover.png) no-repeat;
 }
 .tougao-one {
     font-size: 14px;
@@ -1377,17 +1388,32 @@
     color: #222;
     word-wrap: break-word;
 }
+/*下面是游戏*/
+#yx-icon {
+    background: url(../img/icon/icons.png) -141px -203px no-repeat;
+}
+
+#game-rdiff {
+    display: inline-block;
+    width: 260px;
+    height: 18px;
+    overflow: hidden;
+}
 
 
 
 
 
 
+
+
+
+/*下面是侧条*/
 .nav {
      position: fixed;
     left: 50%;
     top: 50%;
-    margin-left: 614px;
+    margin: 110px 0 0 614px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     right: 200px;

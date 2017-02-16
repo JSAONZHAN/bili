@@ -27,6 +27,9 @@ form {
 	height: 500px;
 	width: 980px;
 }
+p {
+    color: #F66495;
+}
 .user {
 	height: 50px;
 	width: 880px;
@@ -112,7 +115,6 @@ form {
 .btn {
 	height: 50px;
 	width: 	400px;
-	
 }
 .submit-btn {
 	background-color: rgba(0,181,229,1);
@@ -120,4 +122,10 @@ form {
 	line-height: 50px;
 	font-size: 	20px;
 	color: #fff;
+}
+.submit-btn :hover {
+	background-color: #00bee7;
+}
+.in: hover {
+	background: #f7f7f7;
 }

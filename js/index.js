@@ -112,23 +112,6 @@ btn_gotop.onclick = function (){
 }
 //连续点击回到顶部会出现问题
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 下面是foot
 var phone = document.querySelector('.phone');
 var pic_hv = document.querySelector('.pic-hv');
@@ -166,6 +149,47 @@ weixin.onmouseover = function(){
 weixin.onmouseout = function(){
 	return pic_hv3.style.display = "none";
 }
+
+// 网页定位导航
+
+// 滚动条滚动
+// $(window).scroll(function(){
+// 	var top = $(document).scrollTop();
+// 	var menu = $(".nav-list");
+// 	var items = $("#content").find(".item");
+// 	items.each(function(){
+// 		var m = $(this);
+// 		var itemTop = m.offset().top;
+// 		console.log(itemTop);
+
+// 	})
+
+
+// 	//console.log(top);
+
+
+// });
+
+window.onscroll = function (){
+	var top = document.documentElement.scrollTop || document.body.scrollTop;
+	var menus = document.querySelector('.nav-list').getElementsByTagName("a");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

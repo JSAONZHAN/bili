@@ -14,6 +14,7 @@ ol, ul, li, h1, h2, h3, h4, h5, h6 {
 	list-style: none;
 }
 a {
+	color: #222;
 	text-decoration: none;
 	cursor: pointer;
 	outline: 0;

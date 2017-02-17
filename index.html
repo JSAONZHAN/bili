@@ -16,8 +16,60 @@
 					<i></i>
 					<span>主站</span>
 				</li>	
-				<li class="huayou head-com">画友</li>
-				<li class="gamecenter head-com">游戏中心</li>
+				<li class="huayou head-com">画友
+				</li>
+				<li class="gamecenter head-com">游戏中心
+					<div class="gc-hover">
+						<div class="gc-fate">
+							<img src="img/head/gc1.jpg" alt="">
+							<span>命运-冠位指定（Fate/GO）</span>
+						</div>
+						
+						<ul class="gc-bm">
+							<li>
+								<img src="img/head/gc2.png" alt="">
+								<span>魔法少女</span>
+							</li>
+							<li>
+								<img src="img/head/gc3.png" alt="">
+								<span>阴阳师</span>
+							</li>
+							<li>
+								<img src="img/head/gc4.jpg" alt="">
+								<span>崩坏3</span>
+							</li>
+						</ul>
+						<div class="gc-list">
+							<div class="gc-pre">
+								<img src="img/head/title.png" alt="">
+							</div>
+							<ul>
+								<li class="gcr1">仙剑奇侠传幻璃镜
+									<div class="gc31 gccom"></div>
+								</li>
+								<li class="gcr2">刀剑乱舞
+									<div class="gc32 gccom"></div>
+								</li>
+								<li class="gcr3">萌王EX
+									<div class="gc33 gccom"></div>
+								</li>
+								<li class="grcr4">妖精的衣橱
+									<div class="gc34 gccom"></div>
+								</li>
+								<li class="gcr5">EVA:破晓
+									<div class="gc35 gccom"></div>
+								</li>
+								<li class="gcr6">神代梦华谭
+									<div class="gc36 gccom"></div>
+								</li>
+								<li class="gcr7">碧蓝航线
+									<div class="gc37 gccom"></div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</li>
 				<li class="live head-com">直播</li>					<li class="zhoubian head-com">周边</li>
 				<li class="bainianji head-com">
 					<i class="new"></i>
@@ -27,11 +79,35 @@
 		</div>
 		<div class="head-right">
 			<ul>
-				<li class="login">登陆</li>
+				<li class="login">
+					<a href="login.html">登录</a>
+				</li>
 				<li class="shuxian"></li>
-				<li class="register">注册</li>
+				<li class="register">
+					<a href="register.html">注册</a>
+				</li>
 				<li class="tougao">
 					<span class="tougao-one">投稿</span>
+					<ul class="tg-menu">
+						<li>
+							<a href="##">
+								<i class="tg-icon"></i>
+								<span>视频投稿</span>
+							</a>
+						</li>
+						<li>
+							<a href="##">
+								<i class="tg-icon1"></i>
+								<span>投稿管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="##">
+								<i class="tg-icon2"></i>
+								<span>创作中心</span>
+							</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</div>
@@ -114,7 +190,11 @@
 			<div class="random">
 				<img src="img/head/menu-r.gif" alt="">
 			</div>
-			<div class="mobile"></div>
+			<div class="mobile">
+				<div class="phone-box">
+					<div class="phone-code"></div>
+				</div>
+			</div>
 		</div>
 		<div class="search">
 			<form action="" class="search-form">
@@ -126,7 +206,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-body">
+	<div class="container-body" id="content">
 		<div class="container-top">
 		<!-- 下面是轮播 -->
 			<div class="lunbo-left">
@@ -324,7 +404,7 @@
 			</div>
 		</div>
 		<!-- 下面是番剧 -->
-		<div class="container-row" style="height: 410px;">
+		<div class="container-row item" id="item1" style="height: 410px;">
 			<div>
 				<div class="fanju-l">
 					<div class="fanju-l-head">
@@ -950,7 +1030,7 @@
 <!-- 下面是游戏，以番剧为基础 -->
 
 
-		<div class="container-row" style="height: 410px;">
+		<div class="container-row item" id="item2" style="height: 410px;">
 			<div>
 				<div class="fanju-l">
 					<div class="fanju-l-head">
@@ -1267,7 +1347,7 @@
 
 		<!-- 下面是娱乐 -->
 
-		<div class="container-row" style="height: 410px;">
+		<div class="container-row item" id="item3" style="height: 410px;">
 			<div>
 				<div class="fanju-l">
 					<div class="fanju-l-head">
@@ -1327,7 +1407,7 @@
 							<li>
 								<div class="fj-com">
 									<a href="##" class="fj-a">
-										<div class="medal"></div>
+										
 										<img src="img/body/entertainment/2.webp" alt="">
 									</a>
 									<a href="##">
@@ -1411,7 +1491,7 @@
 							<li>
 								<div class="fj-com">
 									<a href="##" class="fj-a">
-										<div class="medal"></div>
+										<div class="medal-silver"></div>
 										<img src="img/body/entertainment/6.webp" alt="">
 									</a>
 									<a href="##">
@@ -1583,7 +1663,7 @@
 		</div>
 		<!-- 下面是生活 -->
 
-		<div class="container-row" style="height: 410px;">
+		<div class="container-row item" id="item4" style="height: 410px;">
 			<div>
 				<div class="fanju-l">
 					<div class="fanju-l-head">
@@ -1906,20 +1986,20 @@
 <!-- 下面是侧条 -->
 	<div class="nav">
 		<div class="nav-list">
-			<div class="fenlei">直播</div>
-			<div class="fenlei">动画</div>
-			<div class="fenlei">番剧</div>
-			<div class="fenlei">游戏</div>
-			<div class="fenlei">娱乐</div>
-			<div class="fenlei">生活</div>
-			<div class="fenlei">舞蹈</div>
-			<div class="fenlei">鬼畜</div>
-			<div class="fenlei">电影</div>
-			<div class="fenlei">时尚</div>
-			<div class="fenlei">科技</div>
-			<div class="fenlei">广告</div>
-			<div class="fenlei">TV剧</div>
-			<div class="fenlei">音乐</div>
+			<div class="fenlei current"><a href="#item1">番剧</a></div>
+			<div class="fenlei"><a href="#item2">游戏</a></div>
+			<div class="fenlei"><a href="#item3">娱乐</a></div>
+			<div class="fenlei"><a href="#item4">生活</a></div>
+			<div class="fenlei"><a href="">直播</a></div>
+			<div class="fenlei"><a href="">动画</a></div>
+			<div class="fenlei"><a href="">舞蹈</a></div>
+			<div class="fenlei"><a href="">鬼畜</a></div>
+			<div class="fenlei"><a href="">电影</a></div>
+			<div class="fenlei"><a href="">时尚</a></div>
+			<div class="fenlei"><a href="">科技</a></div>
+			<div class="fenlei"><a href="">广告</a></div>
+			<div class="fenlei"><a href="">TV剧</a></div>
+			<div class="fenlei"><a href="">音乐</a></div>
 			<div class="paixu">
 				<i></i>
 				<p>排序</p>
@@ -2085,7 +2165,7 @@
 	</div>
 
 
-
-	<script type="text/javascript" src="js/index.js"></script>
+<!-- <script src="js/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

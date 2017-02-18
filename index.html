@@ -112,6 +112,7 @@
 			</ul>
 		</div>
 	</div>
+
 	<div class="head-top">
 		<div class="head-box-filter">
 			<div class="head-filter"></div>		
@@ -197,16 +198,22 @@
 			</div>
 		</div>
 		<div class="search">
-			<form action="" class="search-form">
-				<input class="keyword" type="text" name="keyword" placeholder="bilibili2017拜年祭">
-				<button type="submit" class="search-submit"></button>
+			<form action="" class="search-form" target="_blank" method="get">
+				<input class="keyword" id="search_input" type="text" name="keyword" placeholder="bilibili2017拜年祭">
+				<input type="submit" class="search-submit" value=""></input>
 			</form>
+			<div class="suggest" id="search-suggest">
+				<ul class="search-list">
+					<li>搜索结果1</li>
+					<li>搜索结果2</li>
+				</ul>
+			</div>
 			<div class="rank">
 				<span>排行榜</span>
 			</div>
 		</div>
 	</div>
-	<div class="container-body" id="content">
+		<div class="container-body" id="content">
 		<div class="container-top">
 		<!-- 下面是轮播 -->
 			<div class="lunbo-left">
@@ -1986,20 +1993,48 @@
 <!-- 下面是侧条 -->
 	<div class="nav">
 		<div class="nav-list">
-			<div class="fenlei current"><a href="#item1">番剧</a></div>
-			<div class="fenlei"><a href="#item2">游戏</a></div>
-			<div class="fenlei"><a href="#item3">娱乐</a></div>
-			<div class="fenlei"><a href="#item4">生活</a></div>
-			<div class="fenlei"><a href="">直播</a></div>
-			<div class="fenlei"><a href="">动画</a></div>
-			<div class="fenlei"><a href="">舞蹈</a></div>
-			<div class="fenlei"><a href="">鬼畜</a></div>
-			<div class="fenlei"><a href="">电影</a></div>
-			<div class="fenlei"><a href="">时尚</a></div>
-			<div class="fenlei"><a href="">科技</a></div>
-			<div class="fenlei"><a href="">广告</a></div>
-			<div class="fenlei"><a href="">TV剧</a></div>
-			<div class="fenlei"><a href="">音乐</a></div>
+			<div class="fenlei">
+				<a href="#item1" class="current">番剧</a>
+			</div>
+			<div class="fenlei">
+				<a href="#item2">游戏</a>
+			</div>
+			<div class="fenlei">
+				<a href="#item3">娱乐</a>
+			</div>
+			<div class="fenlei">
+				<a href="#item4">生活</a>
+			</div>
+			<div class="fenlei">
+				<a href="">直播</a>
+			</div>
+			<div class="fenlei">
+				<a href="">动画</a>
+			</div>
+			<div class="fenlei">
+				<a href="">舞蹈</a>
+			</div>
+			<div class="fenlei">
+				<a href="">鬼畜</a>
+			</div>
+			<div class="fenlei">
+				<a href="">电影</a>
+			</div>
+			<div class="fenlei">
+				<a href="">时尚</a>
+			</div>
+			<div class="fenlei">
+				<a href="">科技</a>
+			</div>
+			<div class="fenlei">
+				<a href="">广告</a>
+			</div>
+			<div class="fenlei">
+				<a href="">TV剧</a>
+			</div>
+			<div class="fenlei">
+				<a href="">音乐</a>
+			</div>
 			<div class="paixu">
 				<i></i>
 				<p>排序</p>

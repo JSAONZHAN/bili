@@ -311,12 +311,6 @@
     vertical-align: middle;
 }
 
-
-
-
-
-
-
 .head-top {
     position: relative;
     top: -42px;
@@ -515,6 +509,7 @@
     visibility: visible;
     opacity: 1;
 }
+/*搜索框*/
 .search {
     position: absolute;
     top: -56px;
@@ -555,6 +550,31 @@
     padding: 0;
     border: 0;
 }
+
+.suggest {
+    position: absolute;
+    width: 270px;
+    height: 350px;
+    background-color: #fff;
+    z-index: 70;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #888888
+}
+#search-suggest {
+    display: none;
+}
+.search-list li {
+    width: 266px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 10px 0;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.search-list li:hover {
+    background-color: rgba(240,240,240,1);
+}
 .rank {
     position: absolute;
     left: 2px;
@@ -572,6 +592,7 @@
     background: url(../img/icon/icons.png) -659px  -655px no-repeat;
     font-size: 12px;
 }
+
 /*以上内容是菜单*/
 
 

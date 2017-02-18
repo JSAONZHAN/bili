@@ -119,18 +119,7 @@ var weibo = document.querySelector('.weibo');
 var pic_hv2 = document.querySelector('.pic-hv2');
 var weixin = document.querySelector('.weixin');
 var pic_hv3 = document.querySelector('.pic-hv3');
-// function picShow (){
-// 	pic_hv.style.display = "block";
-// }
-// function hiddenPic (){
-// 	pic_hv.style.display = "none";
-// }
-// function picShow2 (){
-// 	pic_hv2.style.display = "block";
-// }
-// function hiddenPic2 (){
-// 	pic_hv2.style.display = "none";
-// }
+
 phone.onmouseover = function(){
 	return pic_hv.style.display = "block";
 }
@@ -150,36 +139,138 @@ weixin.onmouseout = function(){
 	return pic_hv3.style.display = "none";
 }
 
+
+
+ // 搜索框
+var search_suggest = document.querySelector('#search-suggest');
+var search_input = document.querySelector('#search_input');
+var addEvent = function(id,event,fn){
+	var el = document.getElementById(id)||document;
+	if (el.addEventLister) {
+		el.addEventLister(event,fn,false);
+	}else if(el.attachEvent){
+		el.attachEvent('on'+event,fn);
+	}
+}
+var ajaxGet = function(url,callback){
+	var _xhr = null;
+	if (window.XMLHttpRequest) {
+		_xhr = new window.XMLHttpRequest();
+	}else if(window.ActiveXobject){
+		_xhr = new ActiveXobject("Msxml2.XMLHTTP");
+	}
+	_xhr.onreadystatechange = function(){
+		if (_xhr.readyState == 4 && _xhr.status == 200) {
+			callback(JSON.parse(_xhr.responseText));
+		}
+	}
+	_xhr.open('get',url,false);
+	_xhr.send(null);
+}
+search_input.onkeyup = function(){
+	search_suggest.style.display = 'block';
+	var searchText = document.getElementById('search_input').value;
+	//空白填网址
+	ajaxGet(''+searchText,function(d){
+		var d = d.AS.Results[0].Suggests;
+		var html = '';
+		for (var i = 0; i < Things.length; i++) {
+			html+='<li>'+d[i].Txt+'</li>'
+		}
+	})
+	// search_suggest.style.display = 'block';
+}
+search_input.onblur = function(){
+	search_suggest.style.display = 'none';
+}
+var ajaxGet = function(url,callback){
+	var _xhr = null;
+	if (window.XMLHttpRequest) {
+		_xhr = new window.XMLHttpRequest();
+	}else if(window.ActiveXobject){
+		_xhr = new ActiveXobject("Msxml2.XMLHTTP");
+	}
+	_xhr.onreadystatechange = function(){
+		if (_xhr.readyState == 4 && _xhr.status == 200) {
+			callback(JSON.parse(_xhr.responseText));
+		}
+	}
+	_xhr.open('get',url,false);
+	_xhr.send(null);
+}
+var delegateEvent = function(target,event,fn){
+	addEvent(document,event,function(e){
+		if (e.target.node.Name == target.toUpperCase()) {
+			fn.call(e.target);
+		}
+	});
+}
+delegateEvent('li','click',function(){
+	var keyword = this.innerHTML;
+	//空白填跳转网页
+	location.href = ''+keyword;
+})
+
 // 网页定位导航
 
 // 滚动条滚动
-// $(window).scroll(function(){
-// 	var top = $(document).scrollTop();
-// 	var menu = $(".nav-list");
-// 	var items = $("#content").find(".item");
-// 	items.each(function(){
-// 		var m = $(this);
-// 		var itemTop = m.offset().top;
-// 		console.log(itemTop);
 
-// 	})
+//根据class name 获取元素
+// function getByClassName (obj,cls){
+// 	var elements = obj.getElementsByClassName("*");
+// 	var result = [];
+// 	for (var i = 0; i < elements.length; i++) {
+// 		if(elements[i].className == cls){
+// 			result.push(elements[i]);
 
+// 		}
+// 	}
+// 	return result;
+// }
+// function hasClass (obj,cls){
+// 	return boj.className.match(new RegExp("(\\s|^)"+cls+"(\\s|$)"));
+// }
+// function removeClass (obj,cls){
+// 	if(hasClass(obj,cls)){
+// 		//remove
+// 		var reg = new RegExp("(\\s|^)"+cls+"(\\s|$)");
+// 		obj.className = obj.className.replace(reg,"");
+// 	}
+// }
+// function addClass(obj,cls){
+// 	if (!hasClass(obj,cls)) {
+// 		obj.className += " " +cls;
+// 	}
 
-// 	//console.log(top);
+// }
+// window.onscroll = function (){
+// 	var top = document.documentElement.scrollTop || document.body.scrollTop;
+// 	var menus = document.querySelector('.nav-list').getElementsByTagName("a");
+// 	var items = getByClassName(document.getElementById("content"),"item");
+// 	var currentId = "";
+// 	for (var i = 0; i < items.length; i++) {
+// 		var _item = items[i];
+// 		var _itemTop = _item.offsetTop;
+// 		if(top > _itemsTop - 20){
+// 			currentId = _item.id;
+// 		} else {
+// 			break;
+// 		}
+// 	}
+// 	if (currentId) {
+// 		//给正确的menu下的a元素class赋值
+// 		for(var j = 0;j<menus.length;j++){
+// 			var _menu = menus[j];
+// 			var _href = _menu.href.split("#");
+// 			if (_href[_href.length - 1] != currentId) {
+// 				removeClass(_menu,"current");
 
-
-// });
-
-window.onscroll = function (){
-	var top = document.documentElement.scrollTop || document.body.scrollTop;
-	var menus = document.querySelector('.nav-list').getElementsByTagName("a");
-}
-
-
-
-
-
-
+// 			}else{
+// 				addClass(_menu,"current");
+// 			}
+// 		}
+// 	}
+// }
 
 
 

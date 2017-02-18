@@ -200,10 +200,10 @@
 
 .head-right {
     float: right;
-    width: 158px;
+    width: 310px;
     height: 42px;
 }
-.login {
+.afterl {
     width: 50px;
     height: 42px;
     float: left;
@@ -211,18 +211,10 @@
     line-height: 42px;
     cursor: pointer;
 }
-.login:hover {
+.afterl:hover {
     background-color: rgba(240,248,255,0.7);
 }
-.shuxian {
-    position: relative;
-    top: 12px;
-    width: 1px;
-    height: 15px;
-    background-color: #222;
-    float: left;
-}
-.register {
+.face-box {
     width: 50px;
     height: 42px;
     float: left;
@@ -230,9 +222,18 @@
     line-height: 42px;
     cursor: pointer;
 }
-.register:hover {
-    background-color: rgba(240,248,255,0.7);
+.face {
+    margin: 0 auto;
+    width: 42px;
+    height: 42px;
 }
+.face img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 .tougao {
     position: relative;
     display: block;
